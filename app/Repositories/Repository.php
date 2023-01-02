@@ -25,15 +25,16 @@ class Repository implements RepositoryInterface
         return $this;
     }
 
+    public function get()
+    {
+        return $this->model->select($this->fields)->where($this->conditions)->get();
+    }
+
     public function find($id)
     {
         return $this->model->select($this->fields)->find($id);
     }
 
-    public function all()
-    {
-        return $this->model->select($this->fields)->where($this->conditions)->get();
-    }
 
     public function store($payload)
     {

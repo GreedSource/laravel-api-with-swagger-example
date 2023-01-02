@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 interface ServiceInterface
 {
-    public function all();
+    public function get();
 
     public function find(string $id, ?Request $request = null);
 

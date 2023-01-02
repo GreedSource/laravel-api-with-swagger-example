@@ -2,12 +2,12 @@
 
 namespace App\Services;
 
-use App\Contracts\Repositories\PostRepositoryInterface;
-use App\Contracts\Services\PostServiceInterface;
+use App\Contracts\Repositories\UserRepositoryInterface;
+use App\Contracts\Services\UserServiceInterface;
 
-class PostService implements PostServiceInterface
+class UserService implements UserServiceInterface
 {
-    public function __construct(private PostRepositoryInterface $repository)
+    public function __construct(private UserRepositoryInterface $repository)
     {
     }
 

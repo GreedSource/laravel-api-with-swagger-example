@@ -61,7 +61,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return $this->service->all();
+        return $this->service->get();
     }
 
     /**
